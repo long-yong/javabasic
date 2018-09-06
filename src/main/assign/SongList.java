@@ -10,7 +10,7 @@ public class SongList {
     }
 
     public static HashMap<String,String> createSongList() {
-        HashMap<String,String> map = new HashMap<String,String>();
+        HashMap<String,String> map = new HashMap<>();
         map.put("Shades Of Purple",
                 "    Well I wonder could it be\n" +
                 "    When I was dreaming about you baby\n" +
@@ -62,7 +62,7 @@ public class SongList {
 
     public static void showAllSongs(HashMap<String,String>songlist) {
         System.out.println("\n\nList All Songs\n");
-        for(Object key:songlist.keySet()) {
+        for(String key:songlist.keySet()) {
             System.out.println("\n"+key+":");
             System.out.println(songlist.get(key));
         }

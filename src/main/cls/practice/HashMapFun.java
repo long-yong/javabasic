@@ -11,13 +11,13 @@ public class HashMapFun {
     }
 
     public static HashMap<String,String> createMap() {
-        HashMap<String,String> map = new HashMap<String,String>();
+        HashMap<String,String> map = new HashMap<>();
         for(int i=0; i<10; i++) map.put("key"+i, "val"+i);
         return map;
     }
 
     public static void showMap(HashMap<String,String> map){
-        for(Object key:map.keySet()) {
+        for(String key:map.keySet()) {
             System.out.println(key + " : " + map.get(key));
         }
     }

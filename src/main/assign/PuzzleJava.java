@@ -33,9 +33,10 @@ public class PuzzleJava {
 
     public String[] randStringArray() {
         String[] arr = { "Nancy", "Jinichi", "Fujibayashi", "Momochi", "Ishikawa" };  printArr(arr);
-        List<String>list = new ArrayList<String>(Arrays.asList(arr));
+        List<String>list = new ArrayList<>(Arrays.asList(arr));
         Collections.shuffle(list);
-        arr=list.toArray(new String[list.size()]);
+        arr = new String[list.size()];
+        list.toArray(arr);
         System.out.print(" The shuffled array is: ");
         printArr(arr);
         return arr;
@@ -64,9 +65,9 @@ public class PuzzleJava {
         String str = "";
         for(int i=0;i<5;i++) {
             char c= (char) rand.nextInt(62);
-            if(c<10)      { c+='0'; str+=c; }
-            else if(c<36) { c-=10; c+='a'; str+=c; }
-            else          { c-=36; c+='A'; str+=c; }
+            if(c<10)      { c+='0'; str += c; }
+            else if(c<36) { c-=10; c+='a'; str += c; }
+            else          { c-=36; c+='A'; str += c; }
         }
         return str;
     }

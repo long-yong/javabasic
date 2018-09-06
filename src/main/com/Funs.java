@@ -18,7 +18,7 @@ public class Funs {
     }
 
     public static void showMap(HashMap<String,String> map){
-        for(Object key:map.keySet()) {
+        for(String key:map.keySet()) {
             System.out.println(key + " : " + map.get(key));
         }
     }
