@@ -1,4 +1,4 @@
-package cls;
+package cls.practice;
 import java.util.Scanner;
 
 public class ScanDemo{

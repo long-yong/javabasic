@@ -1,4 +1,4 @@
-package cls;
+package cls.practice;
 
 public class PrintTimeDiff {
 
