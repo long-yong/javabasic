@@ -1,5 +1,6 @@
 package cls.practice;
 import java.util.HashMap;
+import java.util.Iterator;
 
 public class HashMapFun {
 
@@ -20,4 +21,5 @@ public class HashMapFun {
             System.out.println(key + " : " + map.get(key));
         }
     }
+
 }
