@@ -6,9 +6,6 @@ public class DeveloperTest {
 
         Developer dev1 = new Developer();
         System.out.println(dev1.getName());
-    }
-
-    public void display() {
 
     }
 
