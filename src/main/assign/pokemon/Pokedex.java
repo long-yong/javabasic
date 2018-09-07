@@ -15,8 +15,7 @@ public class Pokedex extends AbstractPokemon {
 
     @Override
     public String pokemonInfo(Pokemon pokemon) {
-        String str = "Name: " + pokemon.name + "  Health: "+ pokemon.health +"  Type: " + pokemon.type;
-        return str;
+        return "Name: " + pokemon.name + "  Health: "+ pokemon.health +"  Type: " + pokemon.type;
     }
 
     @Override
