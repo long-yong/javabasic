@@ -1,7 +1,11 @@
 package cls.human;
 
 public class Developer extends Human{
-    @Override
+
+    public Developer() {
+        super();
+    }
+
     public String getName(){
         return "Developer!";
     }
