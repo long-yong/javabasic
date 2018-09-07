@@ -8,4 +8,8 @@ public class DeveloperTest {
         System.out.println(dev1.getName());
     }
 
+    public void display() {
+
+    }
+
 }
