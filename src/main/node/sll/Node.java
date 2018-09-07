@@ -1,4 +1,4 @@
-package node;
+package node.sll;
 
 public class Node {
     public int value;

@@ -1,4 +1,4 @@
-package node;
+package node.sll;
 
 public class ListTester {
     public static void main(String[] args) {
