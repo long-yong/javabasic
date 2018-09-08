@@ -6,27 +6,27 @@ public class DLL {
     public Node tail;
 
     public DLL() {
-        this.head = null;
-        this.tail = null;
+        head = null;
+        tail = null;
     }
 
     public void push(Node newNode) {
-        if(this.head == null) {
-            this.head = newNode;
-            this.tail = newNode;
+        if( head == null ) {
+            head = newNode;
+            tail = newNode;
             return;
         }
-        Node lastNode = this.tail;
+        Node lastNode = tail;
         lastNode.next = newNode;
-        newNode.previous = lastNode;
-        this.tail = newNode;
+        newNode.prev = lastNode;
+        tail = newNode;
     }
 
     public void printValuesForward() {
-        Node current = this.head;
-        while(current != null) {
-            System.out.println(current.value);
-            current = current.next;
+        Node r = head;
+        while(r != null) {
+            System.out.println(r.value);
+            r = r.next;
         }
     }
 

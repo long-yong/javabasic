@@ -9,7 +9,8 @@ public class Node {
     public boolean isCompleteWord;
 
     public Node() {
-        this.children = new HashMap<Character, Node>();
+
+        this.children = new HashMap<>();
         this.isCompleteWord = false;
     }
 
